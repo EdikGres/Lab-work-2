@@ -9,6 +9,6 @@ namespace func {
 	//Функция для возврата true если это буква ( по таблице ASCI)
 	int isalpha(char ch);
 
-
+	
 
 }
