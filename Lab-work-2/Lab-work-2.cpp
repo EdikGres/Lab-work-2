@@ -37,7 +37,7 @@ void main() {
 	using namespace func;
 	//printf("%i", isalpha('a'))
 
-	char* locale = setlocale(LC_ALL, ""); //Задаём русскую локаль
+	char* locale = setlocale(LC_ALL, ""); //Задаём русскую локаль	
 
 	char text[120];
 
