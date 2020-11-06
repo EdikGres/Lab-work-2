@@ -33,7 +33,7 @@
 
 
 
-void main() {
+int main() {
 	using namespace func;
 	//printf("%i", isalpha('a'))
 
@@ -74,7 +74,7 @@ void main() {
 
 
 
-
+	return 0;
 }
 
 
