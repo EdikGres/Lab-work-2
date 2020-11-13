@@ -39,10 +39,10 @@ int main() {
 
 	char* locale = setlocale(LC_ALL, ""); //Задаём русскую локаль	
 
-	char text[120];
+	char text[256];
 
-	printf("Введите строку(120 simbols max): ");
-	fgets(text, 120, stdin);
+	printf("Введите строку(256 simbols max): ");
+	fgets(text, 256, stdin);
 
 	//printf("%s\n", text); //вывести исходный текст, дебаг
 	int lenght = 0;
