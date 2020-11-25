@@ -30,7 +30,10 @@
 	(P.s) выравнивание кода ctrl+K => ctrl+D
 */
 
+/*
+доп ввести множество букв, вывести все слова, которые начинаются и заканчиваются буквами из данного множества a,b,i aci
 
+*/
 
 
 int main() {
@@ -42,7 +45,7 @@ int main() {
 	char text[256];
 
 	printf("Введите строку(256 simbols max): ");
-	fgets(text, 256, stdin);
+	fgets(text, 256, stdin); //? почитать документацию сделано!
 
 	//printf("%s\n", text); //вывести исходный текст, дебаг
 	int lenght = 0;
@@ -51,16 +54,16 @@ int main() {
 		lenght++;
 	}
 
-	int iterator = 0; //перебор массива через итератор
+	int index = 0; //перебор массива через итератор (переименновать итератор)
 
-	for (; iterator < lenght; iterator++)
+	for (; index < lenght; index++)
 	{
-		if (isVowel(text[iterator]) && !isalpha(text[iterator - 1]))
+		if (isVowel(text[index]) && !isalpha(text[index - 1]))
 		{
 
-			for (; iterator < lenght && isalpha(text[iterator]); iterator++)
+			for (; index < lenght && isalpha(text[index]); index++)
 			{
-				printf("%c", text[iterator]);
+				printf("%c", text[index]);
 
 
 
